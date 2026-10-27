@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SyntheticDecisionV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "decision_at", "action", "signal_strength"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "decision_at": {"type": "string", "format": "date-time"},
+    "action": {"enum": ["BUY", "SELL", "HOLD"]},
+    "signal_strength": {"type": "number", "minimum": 0, "maximum": 1},
+    "confidence_calibrated": {"type": "boolean"},
+    "outcome_correct": {"type": ["boolean", "null"]}
+  }
+}

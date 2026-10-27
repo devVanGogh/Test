@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+*.pem
+*.key
+*.sqlite
+*.db
+*.csv
+*.parquet
+*.zip
+.vscode/
+.idea/

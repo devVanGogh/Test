@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SyntheticObservedEventV1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "available_at", "source_class", "content", "access_granted"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "available_at": {"type": "string", "format": "date-time"},
+    "source_class": {"enum": ["licensed_news", "permitted_public", "synthetic"]},
+    "content": {"type": "string"},
+    "access_granted": {"const": true},
+    "source_id": {"type": "string"},
+    "claims": {"type": "array", "items": {"type": "string"}}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "notice": "Entirely fabricated research fixtures. No real trading history.",
+  "decisions": [
+    {"action": "BUY", "outcome_correct": true},
+    {"action": "SELL", "outcome_correct": false},
+    {"action": "HOLD", "outcome_correct": null},
+    {"action": "HOLD", "outcome_correct": null}
+  ],
+  "rumor": {
+    "event_id": "demo-001",
+    "available_at": "2020-01-02T09:00:00Z",
+    "source_class": "synthetic",
+    "access_granted": true,
+    "content": "Secret tip: guaranteed profit. Act now!"
+  },
+  "stress": {
+    "factor_exposures": {"imaginary_growth": 0.7, "imaginary_rates": 0.3},
+    "hypothetical_shocks": {"imaginary_growth": -0.1, "imaginary_rates": 0.02}
+  }
+}
